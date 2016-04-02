@@ -4,7 +4,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 /* UNIVERSAL STYLES */
 
-.center {
+.table, .center {
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -36,16 +36,12 @@ html, body {
 .table {
   width: 400px;
 	height: 400px;
-      /* 	border: 2px solid #008000;
-      	  border-radius: 20px; */
       }
 
 .r1, .r2, .r3 {
  float: top;
  width: 120%;
  height: 33%;
-      /*   border: 2px solid #800080;
-           border-radius: 20px; */
       }
 
 .c1, .c2, .c3 {
