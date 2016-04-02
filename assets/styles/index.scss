@@ -31,26 +31,25 @@ html, body {
     padding:0;
   }
 
+      .table {
+        width: 400px;
+      	height: 400px;
+      /* 	border: 2px solid #008000;
+      	  border-radius: 20px; */
+      }
 
-    .table {
-      width: 400px;
-    	height: 400px;
-    /* 	border: 2px solid #008000;
-    	  border-radius: 20px; */
-    }
-
-    .r1, .r2, .r3 {
-         float: top;
-         width: 120%;
-    	   height: 33%;
-    /*   border: 2px solid #800080;
-         border-radius: 20px; */
-    }
-    .c1, .c2, .c3 {
-        height: 100%;
-        width: 30%;
-        border: 2px solid #0000A0;
-        border-radius: 10px;
-        padding: 2px;
-        margin: 2px;
-        float: left;
+      .r1, .r2, .r3 {
+           float: top;
+           width: 120%;
+      	   height: 33%;
+      /*   border: 2px solid #800080;
+           border-radius: 20px; */
+      }
+      .c1, .c2, .c3 {
+          height: 100%;
+          width: 30%;
+          border: 2px solid #0000A0;
+          border-radius: 10px;
+          padding: 2px;
+          margin: 2px;
+          float: left;
