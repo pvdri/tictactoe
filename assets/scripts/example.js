@@ -37,19 +37,20 @@ var clearBoard;
 // PLACES AN X OR O IN THE BOX WHEN CLICKED. TOGGLES.
 var newGame = function () {
     $('td').one('click', function () {
-           if (turn == 0) {
+           if (turn === 0) {
             $(this).text(oplayer);
             $("#notice").text(xgo);
-            $("#notice2").text($("#a1").text())
+
             turn = 1;
           }
           else {
             $(this).text(xplayer);
+            $("#notice").text(ogo);
             turn = 0;
-            $("#notice").text(ogo)
           };
     });
 };
+
 
 
 // INITIALIZES GAME - keep after var newGame
@@ -64,6 +65,79 @@ $(document).ready(function () {
 });
 
 //
+// if ($('#a1').text() == 'o') {
+//   $("#notice2").text($('#a1').text());
+//  };
+
+// var arbin = [];
+// var arxo = [];
+//
+//
+// var arif = function() {
+//
+// if     ($('#a1').text() == 'o') {arr[0] = 0}
+// elseif ($('#a1').text() == 'x') {arr[0] = 1}
+// elseif ($('#a1').text() == 'o') {arr[1] = 0}
+// elseif ($('#a2').text() == 'x') {arr[1] = 1}
+// elseif ($('#a2').text() == 'o') {arr[2] = 0}
+// elseif ($('#a3').text() == 'x') {arr[2] = 1}
+//
+// elseif ($('#b1').text() == 'o') {arr[3] = 0}
+// elseif ($('#b1').text() == 'x') {arr[3] = 1}
+// elseif ($('#b2').text() == 'o') {arr[4] = 0}
+// elseif ($('#b2').text() == 'x') {arr[4] = 1}
+// elseif ($('#b3').text() == 'o') {arr[5] = 0}
+// elseif ($('#b3').text() == 'x') {arr[5] = 1}
+//
+// elseif ($('#c1').text() == 'o') {arr[6] = 0}
+// elseif ($('#c1').text() == 'x') {arr[6] = 1}
+// elseif ($('#c2').text() == 'o') {arr[7] = 0}
+// elseif ($('#c2').text() == 'x') {arr[7] = 1}
+// elseif ($('#c3').text() == 'o') {arr[8] = 0}
+// elseif ($('#c3').text() == 'x') {arr[8] = 1}
+//
+// else{};
+// if (arrbin[i] === 0)
+// { arrxo[i] = "o"}
+// if (arrbin[i] === 1)
+// { arrxo[i] = "x"}
+//
+
+
+var ar1 = arrbin[0] + arrbin[1] + arrbin[2];
+var ar2 = arrbin[3] + arrbin[4] + arrbin[5];
+var ar3 = arrbin[6] + arrbin[7] + arrbin[8];
+var at1 = arrbin[0] + arrbin[3] + arrbin[6];
+var at2 = arrbin[1] + arrbin[4] + arrbin[7];
+var at3 = arrbin[2] + arrbin[5] + arrbin[8];
+var ad1 = arrbin[0] + arrbin[4] + arrbin[8];
+var ad1 = arrbin[2] + arrbin[4] + arrbin[6];
+
+if(ar1 || ar2 || ar3 || at1 || at2 || at3 || ad1 || ad2 = 3)
+{
+  $("#notice2").text(xwins);
+}
+else if  (ar1 || ar2 || ar3 || at1 || at2 || at3 || ad1 || ad2 = 0)
+{
+  $("#notice2").text(owins);
+}
+else
+{
+ $("#notice2").text(nowins)
+}
+
+// }
+
+
+
+
+
+
+
+
+
+
+//$("#notice2").text($("#a1").text())
 // ("#notice2").text($("#a1").text())
 
 //
