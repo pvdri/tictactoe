@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <script src="vendor.bundle.js" type="text/javascript" charset="utf-8" defer></script>
 <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
-      <html>
-          <head>
-            <title>TIC TAC Trump</title>
-            <link rel="stylesheet" type="text/css" href="/assets/styles/index.scss">
-          </head>
-          <body class="container-fluid">
 
-          <h1>TIC TAC Trump</h1>
-          <p class="center"><b>2 player game - how it works</b>:
-              <br>login, p1 clicks, p2 clicks, and
-              <br>eventually, either p1 or p2 gets 3 in a row and wins!
-            </p>
-          <br>
-          <div class="table" class="center">
-                    <div class="r1">
-                      <div class="c1">a</div>
-                      <div class="c2">b</div>
-                      <div class="c3">c</div>
 
-                    </div>
-                    <div class="r2">
-                      <div class="c1">d</div>
-                      <div class="c2">e</div>
-                      <div class="c3">f</div>
-                    </div>
-                    <div class="r3">
-                      <div class="c1">g</div>
-                      <div class="c2">h</div>
-                      <div class="c3">i</div>
-                    </div>
-           </div>
-          <br>
+<!DOCTYPE html>
+<body>
+     <h1> TIC TAC TOE</h1>
+    <br>
+    <p class="center">a simple game, complex program!</p>
+    <p class="center"><script>document.write(Date());</script></p>
+    <p class="center" id="notice"></p>
+    <p class="center" id="notice2"></p>
+    <br>
+    <div align="center" margin="auto">
+        <table id="board">
+            <tr class="row">
+                <td id="a1"></td>
+                <td id="a2"></td>
+                <td id="a3"></td>
+            </tr>
+            <tr class="row">
+                <td id="b1"></td>
+                <td id="b2"></td>
+                <td id="b3"></td>
+            </tr>
+            <tr class="row">
+                <td id="c1"></td>
+                <td id="c2"></td>
+                <td id="c3"></td>
+            </tr>
+        </table>
+      </div>
 
-          </body>
-      </html>
+    <br>
+    <br>
+    <br>
+    <div class="center button">
+        <button id="restart">New game</button>
+    </div>
+</body>
